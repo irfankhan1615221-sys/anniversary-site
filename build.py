@@ -21,8 +21,8 @@ DESCRIPTIONS = {
     'IMG_20250517_011051_540.jpg': {
         'caption': 'Otafest',
         'description': (
-            'Otafest magic ✨ My first drag show—so much joy. Before we were “us”, '
-            'we were friends, and I love that our story began with laughter, curiosity, '
+            'Otafest magic ✨ My first drag show—so, much joy. Before we were “us”, '
+            'we were friends, and I love that our story began with laughter, curiosity, thristing over anime characters '
             'and feeling completely at ease together.'
         )
     },
@@ -30,14 +30,13 @@ DESCRIPTIONS = {
         'caption': 'Our First Concert',
         'description': (
             'Stampede sounds & shy sparks. At our first concert, when you held the hem of '
-            'my jacket instead of my hand—my heart knew. The gentlest little sign that you '
-            'felt it too. 💞'
+            'my jacket instead of my hand. The gentlest little sign that you liked me. 💞 '
         )
     },
     '20250907_143845.jpg': {
         'caption': 'First Date Day',
         'description': (
-            'Our first official date: hand‑pulled noodles → LEGO adventure. Peak “us” energy—'
+            'Our first official date: hand‑pulled noodles → spontaneous LEGO adventure. Peak “us” energy—'
             'ADHD‑brain detours, impulsive plans, and the best kind of whimsy. With you, every '
             'plan becomes an adventure. 🧡'
         )
