@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy 6 Months ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="A little love page for our 6 months together." />
+</head>
+<body>
+  <!-- Floating hearts -->
+  <div class="hearts" aria-hidden="true"></div>
+
+  <header class="hero">
+    <h1>Happy 6 Months, My Fae Queen ❤️</h1>
+    <p class="subtitle">To my princess, my Unseelie enchantress, my cutie‑patootie, my hottie with a body—this one’s just for you.</p>
+    <div class="cta-row">
+      <a class="btn primary" href="#gallery">See Our Memories</a>
+      <a class="btn ghost" href="#reasons">Little Things I Love</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Photo gallery -->
+    <section id="gallery" class="card">
+      <h2>Moments That Make My Heart Glow</h2>
+      <p class="section-note">Tap a photo to read the little note I left for you. 💌</p>
+
+      <div class="gallery">
+        <!-- Replace image src paths with your own copies of these filenames in assets/images/ -->
+        <figure class="gallery-item" data-note="Otafest magic ✨ My first drag show—so much joy. Before we were ‘us’, we were friends, and I love that our story began with laughter, curiosity, and feeling completely at ease together.">
+          <img src="assets/images/IMG_20250517_011051_540.jpg" alt="Otafest memory together" />
+          <figcaption>Otafest</figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-note="Stampede sounds & shy sparks. At our first concert, when you held the hem of my jacket instead of my hand—my heart knew. The gentlest little sign that you felt it too. 💞">
+          <img src="assets/images/IMG_20250714_091914_701.jpg" alt="First concert together at Stampede" />
+          <figcaption>Our First Concert</figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-note="Our first official date: hand‑pulled noodles → LEGO adventure. Peak ‘us’ energy—ADHD‑brain detours, impulsive plans, and the best kind of whimsy. With you, every plan becomes an adventure. 🧡">
+          <img src="assets/images/20250907_143845.jpg" alt="First official date—noodles and LEGO store" />
+          <figcaption>First Date Day</figcaption>
+        </figure>
+      </div>
+
+      <dialog id="noteDialog">
+        <p id="noteText"></p>
+        <button id="closeDialogBtn" class="btn">Close</button>
+      </dialog>
+    </section>
+
+    <!-- Little things list -->
+    <section id="reasons" class="card">
+      <h2>Little Things I Love About You (and Us)</h2>
+      <ul class="reasons">
+        <li>The way you smile up at me—instant sunshine.</li>
+        <li>Your laugh that turns ordinary moments into core memories.</li>
+        <li>How your shy hand found my jacket and still held my heart. 🥹</li>
+        <li>Our spontaneous plans that always feel perfectly ‘us’.</li>
+        <li>That soft, fierce magic—my princess, my fae queen, my Unseelie wonder.</li>
+      </ul>
+    </section>
+
+    <!-- Timeline -->
+    <section id="memories" class="card">
+      <h2>Our 6‑Month Timeline</h2>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <h3>Before Us — Friends First</h3>
+            <p>Otafest adventures, first drag show, a friendship that already felt like home.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <h3>Shy Sparks</h3>
+            <p>Stampede concert—when your hand found my jacket and my heart found its answer.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <h3>First Official Date</h3>
+            <p>Hand‑pulled noodles → LEGO store. Joy, color, and a thousand tiny yeses.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <h3>Today — 6 Months ❤️</h3>
+            <p>Here’s to our magic—my princess, my fae queen, my cutie‑patootie. More, always.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Surprise reveal -->
+    <section class="card center">
+      <h2>A Little Secret</h2>
+      <button id="revealBtn" class="btn primary">Tap to Reveal</button>
+      <p id="revealText" class="reveal hidden">I love you—wildly, softly, endlessly. Forever team us. 💖</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with love for my princess, my fae queen. ✨</p>
+  </footer>
+
+  <!-- Optional music: place an MP3 at assets/audio/song.mp3 and uncomment -->
+  <!-- <audio id="bgm" src="assets/audio/song.mp3" preload="auto"></audio> -->
+  <script src="script.js"></script>
+</body>
+</html>
