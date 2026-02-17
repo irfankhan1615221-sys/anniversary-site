@@ -21,10 +21,11 @@
   </header>
 
   <main>
-    <!-- Photo gallery (built from gallery.json) -->
+    <!-- Photo gallery (built from filename dates only; items without a valid yyyymmdd are excluded) -->
     <section id="gallery" class="card">
       <h2>Moments That Make My Heart Glow</h2>
-      <p class="section-note">Tap a photo to read the little note I left for you. 💌</p>
+      <p class="section-note">Tap a photo to read the little note I left for you. 💌<br/>
+      Photos are sorted by the date embedded in the filename (format <code>YYYYMMDD</code>). Items without a valid date are skipped.</p>
 
       <div id="galleryGrid" class="gallery" aria-live="polite"></div>
 
@@ -46,7 +47,7 @@
       </ul>
     </section>
 
-    <!-- Timeline (only items with descriptions) -->
+    <!-- Timeline (only items with descriptions; still ordered by filename date, but no visible dates) -->
     <section id="memories" class="card">
       <h2>Our 6‑Month Timeline</h2>
       <div id="timeline" class="timeline"></div>

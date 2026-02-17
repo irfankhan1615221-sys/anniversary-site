@@ -1,38 +1,25 @@
-# Anniversary Site (Auto‑built Gallery + Timeline)
+# Anniversary Site (Filename-date version)
 
-This site renders **all photos** in `assets/images` **chronologically** using EXIF metadata.
-A separate **timeline** shows only the photos that have descriptions (special moments).
+**No EXIF required.** We strictly use a **YYYYMMDD** substring inside each filename to sort photos chronologically. If a file **doesn’t** contain such a substring, it is **not included** (as requested). We also **remove visible dates** from the gallery and timeline; they’re just used for ordering.
 
-## How to use
+## Quick start
 1. Put **all your photos** into `assets/images/`.
-2. (Optional) Open `build.py` and add more sweet notes in the `DESCRIPTIONS` dict using exact filenames.
-3. Run the build script:
+2. Run:
    ```bash
-   python build.py
+   python build_filenames.py
    ```
-   This creates `gallery.json` (list of all photos with dates and any descriptions).
-4. Open `index.html` locally or upload everything to a **public GitHub repository**.
-5. Enable **GitHub Pages** (Settings → Pages → Deploy from a branch → `main` /root).
+   This writes `gallery.json` listing only files that contain a `YYYYMMDD` substring, already sorted.
+3. Open `index.html` locally or push to GitHub Pages (Settings → Pages → Deploy from a branch → `main` /root).
 
-Your site will be at:
-```
-https://<your-username>.github.io/<repository-name>/
-```
+## Add/edit sweet notes
+Edit `script.js` → `DESCRIPTIONS` object. Keys are exact filenames, values have `{ caption, description }`.
+Only items **with** descriptions appear in the **Timeline** (still sorted, with **no** date text shown).
 
-### Notes
-- **Date source**: We use `DateTimeOriginal` (if present) → `DateTimeDigitized` → `DateTime` → file modified time as a last resort.
-- **Formats supported**: `.jpg`, `.jpeg`, `.png`. (If you have HEIC, convert to JPG first.)
-- **Filenames**: Keep them as‑is; if you rename a file, update `DESCRIPTIONS` if it has a special note.
-- **Music**: Place `assets/audio/song.mp3` and uncomment the `<audio>` tag in `index.html`.
+## Optional music
+Add `assets/audio/song.mp3` then uncomment the `<audio>` line in `index.html`.
 
-### Personalization already added
-We pre‑filled descriptions for:
-- `IMG_20250517_011051_540.jpg` (Otafest + first drag show + friends first)
-- `IMG_20250714_091914_701.jpg` (Stampede concert + held the hem of my jacket)
-- `20250907_143845.jpg` (First date: hand‑pulled noodles + LEGO)
-
-### Local preview
+## Local preview
 ```bash
 python -m http.server 5500
-# Visit http://localhost:5500
+# http://localhost:5500
 ```
