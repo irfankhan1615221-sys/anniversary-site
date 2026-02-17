@@ -21,28 +21,12 @@
   </header>
 
   <main>
-    <!-- Photo gallery -->
+    <!-- Photo gallery (built from gallery.json) -->
     <section id="gallery" class="card">
       <h2>Moments That Make My Heart Glow</h2>
       <p class="section-note">Tap a photo to read the little note I left for you. 💌</p>
 
-      <div class="gallery">
-        <!-- Replace image src paths with your own copies of these filenames in assets/images/ -->
-        <figure class="gallery-item" data-note="Otafest magic ✨ My first drag show—so much joy. Before we were ‘us’, we were friends, and I love that our story began with laughter, curiosity, and feeling completely at ease together.">
-          <img src="assets/images/IMG_20250517_011051_540.jpg" alt="Otafest memory together" />
-          <figcaption>Otafest</figcaption>
-        </figure>
-
-        <figure class="gallery-item" data-note="Stampede sounds & shy sparks. At our first concert, when you held the hem of my jacket instead of my hand—my heart knew. The gentlest little sign that you felt it too. 💞">
-          <img src="assets/images/IMG_20250714_091914_701.jpg" alt="First concert together at Stampede" />
-          <figcaption>Our First Concert</figcaption>
-        </figure>
-
-        <figure class="gallery-item" data-note="Our first official date: hand‑pulled noodles → LEGO adventure. Peak ‘us’ energy—ADHD‑brain detours, impulsive plans, and the best kind of whimsy. With you, every plan becomes an adventure. 🧡">
-          <img src="assets/images/20250907_143845.jpg" alt="First official date—noodles and LEGO store" />
-          <figcaption>First Date Day</figcaption>
-        </figure>
-      </div>
+      <div id="galleryGrid" class="gallery" aria-live="polite"></div>
 
       <dialog id="noteDialog">
         <p id="noteText"></p>
@@ -62,39 +46,10 @@
       </ul>
     </section>
 
-    <!-- Timeline -->
+    <!-- Timeline (only items with descriptions) -->
     <section id="memories" class="card">
       <h2>Our 6‑Month Timeline</h2>
-      <div class="timeline">
-        <div class="tl-item">
-          <div class="tl-dot"></div>
-          <div class="tl-content">
-            <h3>Before Us — Friends First</h3>
-            <p>Otafest adventures, first drag show, a friendship that already felt like home.</p>
-          </div>
-        </div>
-        <div class="tl-item">
-          <div class="tl-dot"></div>
-          <div class="tl-content">
-            <h3>Shy Sparks</h3>
-            <p>Stampede concert—when your hand found my jacket and my heart found its answer.</p>
-          </div>
-        </div>
-        <div class="tl-item">
-          <div class="tl-dot"></div>
-          <div class="tl-content">
-            <h3>First Official Date</h3>
-            <p>Hand‑pulled noodles → LEGO store. Joy, color, and a thousand tiny yeses.</p>
-          </div>
-        </div>
-        <div class="tl-item">
-          <div class="tl-dot"></div>
-          <div class="tl-content">
-            <h3>Today — 6 Months ❤️</h3>
-            <p>Here’s to our magic—my princess, my fae queen, my cutie‑patootie. More, always.</p>
-          </div>
-        </div>
-      </div>
+      <div id="timeline" class="timeline"></div>
     </section>
 
     <!-- Surprise reveal -->
